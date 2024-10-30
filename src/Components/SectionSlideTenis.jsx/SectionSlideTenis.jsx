@@ -27,5 +27,27 @@ export const SectionSlideTenis = () => {
         
         ];
 
+        const colorToIndexMap = {
+          red: 0,
+          orange: 1,
+          gray: 2,
+          green: 3,
+        }
+
+        const handleSizeSelect = (size) => {
+          setSelectedSize(size);
+        };
+      
+        const handleColorSelect = (color) => {
+          setSelectedColor(color);
+        };
+      
+        const handleBuyClick = () => {
+          setSelectedSize(null);
+          setSelectedColor(null);
+        };
+
+    
+  
 
 };
