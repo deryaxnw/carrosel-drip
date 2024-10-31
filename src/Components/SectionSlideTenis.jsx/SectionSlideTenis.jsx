@@ -14,16 +14,16 @@ export const SectionSlideTenis = () => {
         const data = 
         
         [
-         { id: '1', image:'./src/assets/White-Sneakers-PNG-Clipart 1.png' },
+         { id: '1', image:'./src/assets/imagesProduct/slide1.png' },
       
       
-         {id: '2', image: './src/assets/White-Sneakers-PNG-Clipart 1.png'},
+         {id: '2', image: './src/assets/imagesProduct/slide2.png'},
       
       
       
-         {id: '3', image:'./src/assets/White-Sneakers-PNG-Clipart 1.png'},
+         {id: '3', image:'./src/assets/imagesProduct/slide3.png'},
       
-         {id: '4', image:'./src/assets/White-Sneakers-PNG-Clipart 1.png'}
+         {id: '4', image:'./src/assets/imagesProduct/slide4.png'}
         
         ];
 
