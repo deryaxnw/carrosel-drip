@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./filter.css"
 
 function FilterAside() {
   const marka = [
@@ -70,9 +71,9 @@ const [selectedEstado, setSelectedEstado] = useState(
   const handleRadioChange = (event) => {
     const { name } = event.target;
     setSelectedEstado({
-      novo: false,
+      novo: true,
       usado: false,
-      [name]: true,
+      [name]: false,
     });
   };
 
@@ -93,6 +94,7 @@ const [selectedEstado, setSelectedEstado] = useState(
                 name={marka.name}
                 checked={!!selectedMarkas[marka.name]}
                 onChange={(e) => {handleCheckboxChange(e, setSelectedMarkas)}}
+                
               />
               {marka.label}
             </label>
@@ -110,6 +112,7 @@ const [selectedEstado, setSelectedEstado] = useState(
                 name={categ.name}
                 checked={!!selectedCategoria[categ.name]}
                 onChange={(e) => {handleCheckboxChange(e, setSelectedCategoria)}}
+                 
               />
               {categ.label}
             </label>
@@ -127,6 +130,7 @@ const [selectedEstado, setSelectedEstado] = useState(
                 name={gene.name}
                 checked={!!selectedGenero[gene.name]}
                 onChange={(e) => {handleCheckboxChange(e, setSelectedGenero)}}
+                
               />
               {gene.label}
             </label>
@@ -143,8 +147,9 @@ const [selectedEstado, setSelectedEstado] = useState(
                 type="radio"
                 name="estado"
                 value={estad.name}
-                checked={selectedEstado[estad.name] || true}
+                checked={!!selectedEstado[estad.name] || true}
                 onChange={handleRadioChange}
+                 
               />
               {estad.label}
             </label>

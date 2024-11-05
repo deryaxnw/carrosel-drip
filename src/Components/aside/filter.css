@@ -1,0 +1,11 @@
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: #C92071; 
+  width: 22px; 
+  height: 22px; 
+  border: 2px solid #C92071; 
+  border-radius: 1px; 
+  outline: none; 
+  cursor: pointer; }
+
+
